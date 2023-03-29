@@ -8,6 +8,7 @@ body{
     position: fixed;
     width: 414px;
     height: 92px;
+    z-index: 1;
 
     top: 0;
     left: 0;
@@ -46,13 +47,24 @@ h3{
 }
 .menu>div{
     background-color: white;
+    border: 5px solid transparent;
     width: 172px;
     height: 216px;
     margin-right: 15px;
+    position: relative;
 
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
 }
+.checkmark {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: green;
+    font-size: 24px;
+  }
+  
 .menu div:last-child {
     margin-right: 0;
 }
@@ -106,8 +118,19 @@ p {
     height: 61px;
 }
 .button h2{
+    line-height: 23px;
     font-size: 20px;
+    font-weight: 400;
 }
+.button.enabled {
+    background-color: green;
+  }
+.button.enabled h2 {
+    font-weight: 700;
+    color: white;
+}
+  
+  
 
 
   
