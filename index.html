@@ -30,83 +30,83 @@
     <div class="main">
         <h3>Primeiro, seu prato</h3>
             <div class="menu">
-                <div id="meal1" onclick="choosemeal1()">
+                <div id="meal1" data-test="dish" onclick="choosemeal1()">
                 <img src="media/frango_yin_yang.png" alt="Frango Yin Yang"/>
-                <h4>Frango Yin Yang</h4>
+                <h4 data-test="item-name">Frango Yin Yang</h4>
                 <p>Um pouco de batata, um pouco de salada</p>
-                <p class="price">R$ 14,90</p>
+                <p class="price" data-test="item-price">R$ 14,90</p>
                 <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
 
-                <div id="meal2" onclick="choosemeal2()">
+                <div id="meal2" data-test="dish" onclick="choosemeal2()">
                     <img src="media/frango_yin_yang.png" alt="Frango Yin Yang"/>
-                    <h4>Frango Yin Yang</h4>
+                    <h4 data-test="item-name">Frango Yin Yang</h4>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <p class="price">R$ 14,90</p>
+                    <p class="price" data-test="item-price">R$ 14,90</p>
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                     </div>
 
-                    <div id="meal3" onclick="choosemeal3()">
+                    <div id="meal3" data-test="dish" onclick="choosemeal3()">
                         <img src="media/frango_yin_yang.png" alt="Frango Yin Yang"/>
-                        <h4>Frango Yin Yang</h4>
+                        <h4 data-test="item-name">Frango Yin Yang</h4>
                         <p>Um pouco de batata, um pouco de salada</p>
-                        <p class="price">R$ 14,90</p>
+                        <p class="price" data-test="item-price">R$ 14,90</p>
                         <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                         </div>
             </div>
 
             <h3>Agora, sua bebida</h3>
             <div class="menu">
-                <div id="drink1" onclick="choosedrink1()">
+                <div id="drink1" data-test="drink" onclick="choosedrink1()">
                 <img src="media/coca-cola.png" alt="Coquinha gelada"/>
-                <h4>Coquinha gelada</h4>
+                <h4 data-test="item-name">Coquinha gelada</h4>
                 <p>Hmmmmm</p>
-                <p class="price">R$ 4,90</p>
+                <p class="price" data-test="item-price">R$ 4,90</p>
                 <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
-                <div id="drink2" onclick="choosedrink2()">
+                <div id="drink2" data-test="drink" onclick="choosedrink2()">
                     <img src="media/coca-cola.png" alt="Coquinha gelada"/>
-                    <h4>Coquinha gelada</h4>
+                    <h4 data-test="item-name">Coquinha gelada</h4>
                     <p>Hmmmmm</p>
-                    <p class="price">R$ 4,90</p>
+                    <p class="price" data-test="item-price">R$ 4,90</p>
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                     </div>
-                    <div id="drink3" onclick="choosedrink3()">
+                    <div id="drink3" data-test="drink" onclick="choosedrink3()">
                         <img src="media/coca-cola.png" alt="Coquinha gelada"/>
-                        <h4>Coquinha gelada</h4>
+                        <h4 data-test="item-name">Coquinha gelada</h4>
                         <p>Hmmmmm</p>
-                        <p class="price">R$ 4,90</p>
+                        <p class="price" data-test="item-price">R$ 4,90</p>
                         <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                         </div>
             </div>
 
             <h3>Por fim, sua sobremesa</h3>
             <div class="menu">
-                <div id="dessert1" onclick="choosedessert1()">
+                <div id="dessert1" data-test="dessert" onclick="choosedessert1()">
                 <img src="media/pudim.png" alt="Pudim"/>
-                <h4>Pudim</h4>
+                <h4 data-test="item-name">Pudim</h4>
                 <p>Apenas pudim</p>
-                <p class="price">R$ 7,90</p>
+                <p class="price" data-test="item-price">R$ 7,90</p>
                 <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
-                <div id="dessert2" onclick="choosedessert2()">
+                <div id="dessert2" data-test="dessert" onclick="choosedessert2()">
                     <img src="media/pudim.png" alt="Pudim"/>
-                    <h4>Pudim</h4>
+                    <h4 data-test="item-name">Pudim</h4>
                     <p>Apenas pudim</p>
-                    <p class="price">R$ 7,90</p>
+                    <p class="price" data-test="item-price">R$ 7,90</p>
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                     </div>
-                    <div id="dessert3" onclick="choosedessert3()">
+                    <div id="dessert3" data-test="dessert" onclick="choosedessert3()">
                         <img src="media/pudim.png" alt="Pudim"/>
-                        <h4>Pudim</h4>
+                        <h4 data-test="item-name">Pudim</h4>
                         <p>Apenas pudim</p>
-                        <p class="price">R$ 7,90</p>
+                        <p class="price" data-test="item-price">R$ 7,90</p>
                         <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                         </div>
             </div>
 
             <div class="bottom">
-                <div class="button" id="order-button" onclick="place_order()" disabled>
+                <div class="button" id="order-button" data-test="order-btn" onclick="place_order()" disabled>
                     <h2>Selecione os 3 itens<br>para fechar o pedido</h2>
                 </div>
             </div>

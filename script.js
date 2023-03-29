@@ -183,10 +183,10 @@ function place_order(){
     total_order = total_order.toFixed(2).replace(".", ",");
 
     let mensagem =
-    "Olá, gostaria de fazer o pedido:\n" +
-    "- Prato: " + meal + "\n" +
-    "- Bebida: " + drink + "\n" +
-    "- Sobremesa: " + dessert + "\n" +
+    "Olá, gostaria de fazer o pedido:\r\n" +
+    "- Prato: " + meal + "\r\n" +
+    "- Bebida: " + drink + "\r\n" +
+    "- Sobremesa: " + dessert + "\r\n" +
     "Total: R$ " + total_order;
   
   window.open("https://wa.me/+5521999999999?text=" + encodeURIComponent(mensagem));
