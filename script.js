@@ -10,6 +10,13 @@ let dessert;
 let dessertprice;
 let dessertSelected;
 
+function enable_button() {
+  var button = document.querySelector(".button");
+  button.removeAttribute("disabled");
+  button.classList.add("enabled");
+  button.querySelector("h2").textContent = "Fechar pedido";
+}
+
 function check_selection(mealSelected, drinkSelected, dessertSelected) {
     const button = document.querySelector('.button');
     if (mealSelected && drinkSelected && dessertSelected) {
@@ -19,14 +26,6 @@ function check_selection(mealSelected, drinkSelected, dessertSelected) {
       button.setAttribute('disabled', '');
     }
   }
-
-  function enable_button() {
-    var button = document.querySelector(".button");
-    button.removeAttribute("disabled");
-    button.classList.add("enabled");
-    button.querySelector("h2").textContent = "Fechar pedido!";
-  }
-  
 
 function choosemeal1() {
     document.getElementById("meal1").style.borderColor = "green";
@@ -174,21 +173,55 @@ function choosedessert3(){
 
     check_selection(mealSelected, drinkSelected, dessertSelected);
 }
-function place_order(){
-    if (!document.getElementById('order-button').classList.contains('enabled')) {
-        return;
-      }
-    
-    let total_order = mealprice + drinkprice + dessertprice;
-    total_order = total_order.toFixed(2).replace(".", ",");
+function open_whatsapp() {
+  let total_order = mealprice + drinkprice + dessertprice;
+  total_order = total_order.toFixed(2).replace(".", ",");
 
-    let mensagem =
+  const name = prompt('Informe seu nome: ');
+  const adress = prompt('Informe seu endereço: ');
+
+  let mensagem =
     "Olá, gostaria de fazer o pedido:\r\n" +
     "- Prato: " + meal + "\r\n" +
     "- Bebida: " + drink + "\r\n" +
     "- Sobremesa: " + dessert + "\r\n" +
-    "Total: R$ " + total_order;
-  
+    "Total: R$ " + total_order + "\r\n" +
+    "\r\n" +
+    "Nome: " + name + "\r\n" +
+    "Endereço: " + adress
+
   window.open("https://wa.me/+5521999999999?text=" + encodeURIComponent(mensagem));
+}
+
+function place_order() {
+  if (!document.getElementById('order-button').classList.contains('enabled')) {
+    return;
+  }
+
+  const confirmationMenu = document.querySelector('.confirmation-menu');
+  const pageCover = document.querySelector('.page-cover');
+  const confirmButton = document.querySelector('#confirm-button');
+  const cancelButton = document.querySelector('#cancel-button');
+
+  pageCover.style.display = 'block';
+
+  let total_order = mealprice + drinkprice + dessertprice;
+  total_order = total_order.toFixed(2).replace(".", ",");
+
+  document.getElementById("meal").innerHTML = meal;
+  document.getElementById("drink").innerHTML = drink;
+  document.getElementById("dessert").innerHTML = dessert;
+  document.getElementById("meal-price").innerHTML = mealprice.toFixed(2).replace(".", ",");;
+  document.getElementById("drink-price").innerHTML = drinkprice.toFixed(2).replace(".", ",");
+  document.getElementById("dessert-price").innerHTML = dessertprice.toFixed(2).replace(".", ",");
+  document.getElementById("total-price").innerHTML = total_order;
+
+  confirmButton.addEventListener('click', open_whatsapp);
+
+  cancelButton.addEventListener('click', function() {
+    pageCover.style.display = 'none';
+    confirmationMenu.style.display = 'none';
+  });
   
+  confirmationMenu.style.display = 'block';
 }
