@@ -32,7 +32,7 @@
     <div class="main">
         <h3>Primeiro, seu prato</h3>
             <div class="menu">
-                <div id="meal1" data-test="dish" onclick="choosemeal1()">
+                <div id="meal1" title="Frango Yin Yang" data-test="dish" onclick="chooseMeal('meal1')">
                     <img src="media/frango_yin_yang.png" alt="Frango Yin Yang"/>
                     <h4 data-test="item-name">Frango Yin Yang</h4>
                     <p>Um pouco de batata, um pouco de salada</p>
@@ -40,26 +40,98 @@
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
 
-                <div id="meal2" data-test="dish" onclick="choosemeal2()">
-                    <img src="media/frango_yin_yang.png" alt="Frango Yin Yang"/>
-                    <h4 data-test="item-name">Frango Yin Yang</h4>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p class="price" data-test="item-price">R$ 14,90</p>
+                <div id="meal2" title="Cachorro empanado" data-test="dish" onclick="chooseMeal('meal2')">
+                    <img src="media/cachorro_empanado.png" alt="Cachorro empanado"/>
+                    <h4 data-test="item-name">Cachorro empanado</h4>
+                    <p>Não é cachorro de verdade</p>
+                    <p class="price" data-test="item-price">R$ 9,90</p>
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
 
-                    <div id="meal3" data-test="dish" onclick="choosemeal3()">
-                        <img src="media/frango_yin_yang.png" alt="Frango Yin Yang"/>
-                        <h4 data-test="item-name">Frango Yin Yang</h4>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <p class="price" data-test="item-price">R$ 14,90</p>
+                    <div id="meal3" title="Churrasco de gato" data-test="dish" onclick="chooseMeal('meal3')">
+                        <img src="media/churrasco_de_gato.png" alt="Churrasco de gato"/>
+                        <h4 data-test="item-name">Churrasco de gato</h4>
+                        <p>De gato? 😳</p>
+                        <p class="price" data-test="item-price">R$ 1,99</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal4" title="Pombo Quente" data-test="dish" onclick="chooseMeal('meal4')">
+                        <img src="media/pombo_dilma.png" alt="Pombo Quente"/>
+                        <h4 data-test="item-name">Pombo Quente</h4>
+                        <p>"Cachorro" quente só que de pombo</p>
+                        <p class="price" data-test="item-price">R$ 6,90</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal5" title="Sopa de macaco" data-test="dish" onclick="chooseMeal('meal5')">
+                        <img src="media/sopa_de_macaco.png" alt="Sopa de macaco"/>
+                        <h4 data-test="item-name">Sopa de macaco</h4>
+                        <p>Delícia kkkkk</p>
+                        <p class="price" data-test="item-price">R$ 0,99</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal6" title="Mão humana" data-test="dish" onclick="chooseMeal('meal6')">
+                        <img src="media/mao.png" alt="Mão humana"/>
+                        <h4 data-test="item-name">Mão humana</h4>
+                        <p>Vai uma mãozinha? kkkk</p>
+                        <p class="price" data-test="item-price">R$ 0,00</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal7" title="Macarrão de minhoca" data-test="dish" onclick="chooseMeal('meal7')">
+                        <img src="media/macarrao_de_minhoca.jpg" alt="Macarrão de minhoca"/>
+                        <h4 data-test="item-name">Macarrão de minhoca</h4>
+                        <p class="description">Rico em proteínas. Alimentação do futuro, confia kk</p>
+                        <p class="price" data-test="item-price">R$ 17,50</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal8" title="Rato frito ao óleo" data-test="dish" onclick="chooseMeal('meal8')">
+                        <img src="media/ratim_frito.jpg" alt="Rato frito ao óleo"/>
+                        <h4 data-test="item-name">Rato frito ao óleo</h4>
+                        <p>leptospirose garantida ou seu dinheiro de volta</p>
+                        <p class="price" data-test="item-price">R$ 8,33</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal9" title="Cérebro" data-test="dish" onclick="chooseMeal('meal9')">
+                        <img src="media/cerebro.jpg" alt="Cérebro"/>
+                        <h4 data-test="item-name">Cérebro</h4>
+                        <p>Uma boa opção para zumbis</p>
+                        <p class="price" data-test="item-price">R$ 6,66</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal10" title="Patê" data-test="dish" onclick="chooseMeal('meal10')">
+                        <img src="media/pate.jpg" alt="Patê"/>
+                        <h4 data-test="item-name">Patê</h4>
+                        <p class="description">Miolo e osso tudo misturado num prato de patê</p>
+                        <p class="price" data-test="item-price">R$ 9,99</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal11" title="Sopa de maconha" data-test="dish" onclick="chooseMeal('meal11')">
+                        <img src="media/sopa_de_maconha.jpg" alt="Sopa de maconha"/>
+                        <h4 data-test="item-name">Sopa de maconha</h4>
+                        <p>Melhor opção vegana não há</p>
+                        <p class="price" data-test="item-price">R$ 4,20</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="meal12" title="Testículo de boi" data-test="dish" onclick="chooseMeal('meal12')">
+                        <img src="media/testiculo_boi.jpg" alt="Testículo de boi"/>
+                        <h4 data-test="item-name">Testículo de boi</h4>
+                        <p>Não ironicamente isso é muito bom kkkk</p>
+                        <p class="price" data-test="item-price">R$ 19,86</p>
                         <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                     </div>
             </div>
 
             <h3>Agora, sua bebida</h3>
             <div class="menu">
-                <div id="drink1" data-test="drink" onclick="choosedrink1()">
+                <div id="drink1" title="Coquinha gelada" data-test="drink" onclick="chooseDrink('drink1')">
                     <img src="media/coca-cola.png" alt="Coquinha gelada"/>
                     <h4 data-test="item-name">Coquinha gelada</h4>
                     <p>Hmmmmm</p>
@@ -67,26 +139,98 @@
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
 
-                <div id="drink2" data-test="drink" onclick="choosedrink2()">
-                    <img src="media/coca-cola.png" alt="Coquinha gelada"/>
-                        <h4 data-test="item-name">Coquinha gelada</h4>
-                        <p>Hmmmmm</p>
-                        <p class="price" data-test="item-price">R$ 4,90</p>
+                <div id="drink2" title="Conhaque de Alcatraz" data-test="drink" onclick="chooseDrink('drink2')">
+                    <img src="media/conhaque_Alcatraz.png" alt="Conhaque de Alcatraz"/>
+                        <h4 data-test="item-name">Conhaque de Alcatraz</h4>
+                        <p class="description">Gasolina de avião e óleo diesel num copo com limão</p>
+                        <p class="price" data-test="item-price">R$ 29,90</p>
                         <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                     </div>
 
-                    <div id="drink3" data-test="drink" onclick="choosedrink3()">
-                        <img src="media/coca-cola.png" alt="Coquinha gelada"/>
-                        <h4 data-test="item-name">Coquinha gelada</h4>
-                        <p>Hmmmmm</p>
-                        <p class="price" data-test="item-price">R$ 4,90</p>
+                    <div id="drink3" title="Bolsa de sangue" data-test="drink" onclick="chooseDrink('drink3')">
+                        <img src="media/blooddrink.png" alt="Bolsa de sangue"/>
+                        <h4 data-test="item-name">Bolsa de sangue</h4>
+                        <p>Drink nutritivo para vampiros</p>
+                        <p class="price" data-test="item-price">R$ 8,90</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink4" title="Suco do Chaves" data-test="drink" onclick="chooseDrink('drink4')">
+                        <img src="media/suco_chaves.png" alt="Suco do Chaves"/>
+                        <h4 data-test="item-name">Suco do Chaves</h4>
+                        <p class="description">De limão com sabor de morango, mas parece tamarindo</p>
+                        <p class="price" data-test="item-price">R$ 2,90</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink5" title="Soda cáustica" data-test="drink" onclick="chooseDrink('drink5')">
+                        <img src="media/soda_caustica.jpg" alt="Soda cáustica"/>
+                        <h4 data-test="item-name">Soda cáustica</h4>
+                        <p>O mais próximo de "Soda" que temos</p>
+                        <p class="price" data-test="item-price">R$ 6,13</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink6" title="Suco radioativo" data-test="drink" onclick="chooseDrink('drink6')">
+                        <img src="media/suco_radioativo.jpeg" alt="Suco radioativo"/>
+                        <h4 data-test="item-name">Suco radioatio</h4>
+                        <p>Direto de Chernobyl</p>
+                        <p class="price" data-test="item-price">R$ 1,99</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink7" title="Chá de maconha" data-test="drink" onclick="chooseDrink('drink7')">
+                        <img src="media/cha_de_maconha.jpg" alt="Chá de maconha"/>
+                        <h4 data-test="item-name">Chá de maconha</h4>
+                        <p class="description">Na Inglaterra você toma chá às 5:00h, aqui você toma 4:20h</p>
+                        <p class="price" data-test="item-price">R$ 4,20</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink8" title="Chorume" data-test="drink" onclick="chooseDrink('drink8')">
+                        <img src="media/chorume.jpg" alt="Chorume"/>
+                        <h4 data-test="item-name">Chorume</h4>
+                        <p>Bebida saudável e 100% natural</p>
+                        <p class="price" data-test="item-price">R$ 2,00</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink9" title="Nitroglicerina" data-test="drink" onclick="chooseDrink('drink9')">
+                        <img src="media/nitroglicerina.jpg" alt="Nitroglicerina"/>
+                        <h4 data-test="item-name">Nitroglicerina</h4>
+                        <p>Uma explosão de sabores</p>
+                        <p class="price" data-test="item-price">R$ 99,99</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink10" title="Tequila" data-test="drink" onclick="chooseDrink('drink10')">
+                        <img src="media/tequila.jpg" alt="Tequila"/>
+                        <h4 data-test="item-name">Tequila llegada del infierno</h4>
+                        <p class="description longer">Es peor que gasolina y la nitroglicerina, dinamita, polvora, sea lo que sea</p>
+                        <p class="price" data-test="item-price">R$ 60,06</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink11" title="Gasolina" data-test="drink" onclick="chooseDrink('drink11')">
+                        <img src="media/gasolina.jpeg" alt="Gasolina"/>
+                        <h4 data-test="item-name">Gasolina</h4>
+                        <p>Combustível ou bebida? Você decide!</p>
+                        <p class="price" data-test="item-price">R$ 7,83</p>
+                        <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                    </div>
+
+                    <div id="drink12" title="Uísque de urina" data-test="drink" onclick="chooseDrink('drink12')">
+                        <img src="media/uisque_de_urina.jpg" alt="Uísque de urina"/>
+                        <h4 data-test="item-name">Uísque de urina</h4>
+                        <p>Direto do Rio de Whisky do velho doido Willie</p>
+                        <p class="price" data-test="item-price">R$ 26,17</p>
                         <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                     </div>
             </div>
 
             <h3>Por fim, sua sobremesa</h3>
             <div class="menu">
-                <div id="dessert1" data-test="dessert" onclick="choosedessert1()">
+                <div id="dessert1" title="Pudim" data-test="dessert" onclick="chooseDessert('dessert1')">
                     <img src="media/pudim.png" alt="Pudim"/>
                     <h4 data-test="item-name">Pudim</h4>
                     <p>Apenas pudim</p>
@@ -94,44 +238,118 @@
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
 
-                <div id="dessert2" data-test="dessert" onclick="choosedessert2()">
-                        <img src="media/pudim.png" alt="Pudim"/>
-                        <h4 data-test="item-name">Pudim</h4>
-                        <p>Apenas pudim</p>
-                        <p class="price" data-test="item-price">R$ 7,90</p>
+                <div id="dessert2" title="Bolo My little Pony" data-test="dessert" onclick="chooseDessert('dessert2')">
+                        <img src="media/bolomoana.jpg" alt="Bolo My little Pony"/>
+                        <h4 data-test="item-name">Bolo My Little Pony</h4>
+                        <p class="description">Presente de aniversário perfeito para sua prima chata</p>
+                        <p class="price" data-test="item-price">R$ 49,90</p>
                         <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
 
-                <div id="dessert3" data-test="dessert" onclick="choosedessert3()">
-                    <img src="media/pudim.png" alt="Pudim"/>
-                    <h4 data-test="item-name">Pudim</h4>
-                    <p>Apenas pudim</p>
-                    <p class="price" data-test="item-price">R$ 7,90</p>
+                <div id="dessert3" title="Brisadeiro" data-test="dessert" onclick="chooseDessert('dessert3')">
+                    <img src="media/brisadeiro.jpg" alt="Brisadeiro"/>
+                    <h4 data-test="item-name">Brisadeiro</h4>
+                    <p>Brigadeiro que te dará uma "brisa"</p>
+                    <p class="price" data-test="item-price">R$ 3,90</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert4" title="Doce de LSD" data-test="dessert" onclick="chooseDessert('dessert4')">
+                    <img src="media/lsd-efeitos-.png" alt="Doce de LSD"/>
+                    <h4 data-test="item-name">Doce de LSD</h4>
+                    <p class="description">Ao consumir prometa não assinar o artigo 12 pra ninguém</p>
+                    <p class="price" data-test="item-price">R$ 1,99</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert5" title="Bronha" data-test="dessert" onclick="chooseDessert('dessert5')">
+                    <img src="media/brownie-de-cannabis.jpg" alt="Bronha"/>
+                    <h4 data-test="item-name">Bronha</h4>
+                    <p class="description">Mistura de Brownie com maconha. Vai uma bronha aí? kkk</p>
+                    <p class="price" data-test="item-price">R$ 9,70</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert6" title="Bosta de elefante" data-test="dessert" onclick="chooseDessert('dessert6')">
+                    <img src="media/bosta_de_elefante.jpg" alt="Bosta de elefante"/>
+                    <h4 data-test="item-name">Bosta de elefante</h4>
+                    <p>Recheado com café</p>
+                    <p class="price" data-test="item-price">R$ 0,00</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert7" title="Doce radioativo" data-test="dessert" onclick="chooseDessert('dessert7')">
+                    <img src="media/doce_radioativo.jpeg" alt="Doce radioativo"/>
+                    <h4 data-test="item-name">Doce radioativo</h4>
+                    <p>Sabor Césio 137</p>
+                    <p class="price" data-test="item-price">R$ 3,99</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert8" title="Arroz doce com frango" data-test="dessert" onclick="chooseDessert('dessert8')">
+                    <img src="media/arroz_doce.jpg" alt="Arroz doce com frango"/>
+                    <h4 data-test="item-name">Arroz doce com frango</h4>
+                    <p class="description">Pelo incrível que pareça isso é uma sobremesa</p>
+                    <p class="price" data-test="item-price">R$ 18,56</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert9" title="Chocolate" data-test="dessert" onclick="chooseDessert('dessert9')">
+                    <img src="media/chocolate.png" alt="Chocolate"/>
+                    <h4 data-test="item-name">"Chocolate"</h4>
+                    <p>O que? É só Chocolate</p>
+                    <p class="price" data-test="item-price">R$ 0,00</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert10" title="Sorvete de Wasabi" data-test="dessert" onclick="chooseDessert('dessert10')">
+                    <img src="media/sorvete_wasabi.jpg" alt="Sorvete de Wasabi"/>
+                    <h4 data-test="item-name">Sorvete de Wasabi</h4>
+                    <p>Não ironicamente essa receita existe</p>
+                    <p class="price" data-test="item-price">R$ 4,93</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert11" title="Torta estragada" data-test="dessert" onclick="chooseDessert('dessert11')">
+                    <img src="media/torta_estragada.png" alt="Torta estragada"/>
+                    <h4 data-test="item-name">Torta estragada</h4>
+                    <p>Tente se tiver barriga de chumbo</p>
+                    <p class="price" data-test="item-price">R$ 1,11</p>
+                    <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+                </div>
+
+                <div id="dessert12" title="Grilo com chocolate" data-test="dessert" onclick="chooseDessert('dessert12')">
+                    <img src="media/grilo_chocolate.jpg" alt="Grilo com chocolate"/>
+                    <h4 data-test="item-name">Grilo com chocolate</h4>
+                    <p class="description">Rico em proteínas. Sobremesa do futuro, confia kk</p>
+                    <p class="price" data-test="item-price">R$ 1,11</p>
                     <ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
                 </div>
             </div>
 
             <div class="bottom">
                 <div class="button" id="order-button" data-test="order-btn" onclick="place_order()" disabled>
-                    <h2>Selecione os 3 itens<br>para fechar o pedido</h2>
+                    <h2>Selecione os 3 itens<br> para fechar o pedido</h2>
                 </div>
             </div>
         </div>
 
         <div class="page-cover">
-            <div class="confirmation-menu" data-test="confirm-order-modal">
-                <h2>Confirme seu pedido</h2>
-                <ul>
-                  <li><span id="meal"></span><span id="meal-price"></span></li>
-                  <li><span id="drink"></span><span id="drink-price"></span></li>
-                  <li><span id="dessert"></span><span id="dessert-price"></span></li>
-                  <li><span>TOTAL:</span><span>R$</span><span id="total-price">27,70</span></li>
-                </ul>
+            <div class="centralizer">
+                <div class="confirmation-menu" data-test="confirm-order-modal">
+                    <h2>Confirme seu pedido</h2>
+                        <ul>
+                            <li><span id="meal"></span><span id="meal-price"></span></li>
+                            <li><span id="drink"></span><span id="drink-price"></span></li>
+                            <li><span id="dessert"></span><span id="dessert-price"></span></li>
+                            <li><span>TOTAL:</span><span>R$</span><span id="total-price">27,70</span></li>
+                        </ul>
                 <div class="choices">
                     <button id="confirm-button" data-test="confirm-order-btn">Tudo certo, pode pedir!</button>
                     <button id="cancel-button" data-test="cancel-order-btn">Cancelar</button>
                 </div>
             </div>
-       </div>       
+        </div>
+    </div>       
 </body>
 </html>
